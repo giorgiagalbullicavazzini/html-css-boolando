@@ -39,6 +39,10 @@ Common
   display: flex;
 }
 
+img {
+  display: block;
+}
+
 ul {
   list-style-type: none;
   height: 100%;
@@ -54,6 +58,13 @@ a {
   color: currentColor;
   text-decoration: none;
   vertical-align: middle;
+}
+
+main .product-price::after {
+  color: black;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-left: 3px;
 }
 
 /*
@@ -97,7 +108,6 @@ header .container-small > * {
 }
 
 .header-logo img {
-  display: block;
   margin: auto;
   width: 20%;
 }
@@ -130,4 +140,29 @@ main .product {
 
 main .product-photo {
   background-color: #ebebeb;
+}
+
+main .product-photo img {
+  width: 100%;
+}
+
+main .product-info .product-name,
+main .product-info .product-price {
+  font-weight: bold;
+}
+
+main .product-info .product-name {
+  text-transform: uppercase;
+}
+
+main .product-info .product-price {
+  color: red;
+}
+
+main .product-price#discount-1::after {
+  content: "29,99 €";
+}
+
+main .product-price#discount-2::after {
+  content: "184,99 €";
 }
