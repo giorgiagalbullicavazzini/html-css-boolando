@@ -1,0 +1,80 @@
+/*
+==============
+Reset
+==============
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+==============
+Debug
+==============
+*/
+
+.debug .header-logo {
+  background-color: lightblue;
+}
+
+.debug .header-target,
+.debug .header-buttons {
+  background-color: lightgreen;
+}
+
+/*
+==============
+Container
+==============
+*/
+
+body {
+  background-color: #0e0e0e;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.container-small {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/*
+==============
+Header
+==============
+*/
+
+header {
+  background-color: #ff6900;
+  color: white;
+}
+
+header .container-small {
+  display: flex;
+}
+
+header .container-small > * {
+  margin: 20px 0;
+}
+
+.header-logo {
+  width: 60%;
+  text-align: center;
+}
+
+.header-target,
+.header-buttons {
+  width: 20%;
+}
+
+.header-buttons {
+  text-align: right;
+}
