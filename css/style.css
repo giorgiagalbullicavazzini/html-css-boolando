@@ -29,6 +29,14 @@ Debug
   height: 500px;
 }
 
+.debug .footer-legal {
+  background-color: lightblue;
+}
+
+.debug .footer-social {
+  background-color: lightgreen;
+}
+
 /*
 ==============
 Common
@@ -221,4 +229,29 @@ main .product-photo .product-category {
 
 main .product-photo #special-category {
   left: 0;
+}
+
+/*
+==============
+Footer
+==============
+*/
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 30px 0;
+}
+
+footer .container-small {
+  justify-content: space-between;
+}
+
+footer .container-small ul {
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+footer .container-small .footer-legal {
+  width: 50%;
 }
