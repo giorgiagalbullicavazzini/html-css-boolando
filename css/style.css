@@ -114,9 +114,13 @@ header .container-small > * {
   width: 60%;
 }
 
-.header-logo img {
-  margin: auto;
+.header-logo .logo-image {
   width: 20%;
+  margin: auto;
+}
+
+.header-logo img {
+  width: 100%;
 }
 
 .header-target,
