@@ -16,14 +16,14 @@ Debug
 ==============
 */
 
-/* .debug .header-logo {
+.debug .header-logo {
   background-color: lightblue;
-} */
+}
 
-/* .debug .header-target,
+.debug .header-target,
 .debug .header-buttons {
   background-color: lightgreen;
-} */
+}
 
 /*
 ==============
@@ -33,9 +33,9 @@ Common
 
 ul {
   list-style-type: none;
+  height: 100%;
   display: flex;
   align-items: center;
-  height: 100%;                /* !! Rivedere metodo */
 }
 
 li:not(:last-child) {
@@ -45,6 +45,7 @@ li:not(:last-child) {
 a {
   color: currentColor;
   text-decoration: none;
+  vertical-align: middle;
 }
 
 /*
