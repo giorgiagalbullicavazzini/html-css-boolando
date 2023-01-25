@@ -16,13 +16,35 @@ Debug
 ==============
 */
 
-.debug .header-logo {
+/* .debug .header-logo {
   background-color: lightblue;
-}
+} */
 
-.debug .header-target,
+/* .debug .header-target,
 .debug .header-buttons {
   background-color: lightgreen;
+} */
+
+/*
+==============
+Common
+==============
+*/
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 100%;                /* !! Rivedere metodo */
+}
+
+li:not(:last-child) {
+  margin-right: 10px;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
 }
 
 /*
@@ -67,7 +89,12 @@ header .container-small > * {
 
 .header-logo {
   width: 60%;
-  text-align: center;
+}
+
+.header-logo img {
+  display: block;
+  margin: auto;
+  width: 20%;
 }
 
 .header-target,
@@ -75,6 +102,6 @@ header .container-small > * {
   width: 20%;
 }
 
-.header-buttons {
-  text-align: right;
+.header-buttons ul {
+  justify-content: flex-end;
 }
