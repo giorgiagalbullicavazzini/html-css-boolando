@@ -25,11 +25,19 @@ Debug
   background-color: lightgreen;
 }
 
+.debug .product-photo {
+  height: 500px;
+}
+
 /*
 ==============
 Common
 ==============
 */
+
+.container-small {
+  display: flex;
+}
 
 ul {
   list-style-type: none;
@@ -80,10 +88,6 @@ header {
   color: white;
 }
 
-header .container-small {
-  display: flex;
-}
-
 header .container-small > * {
   margin: 20px 0;
 }
@@ -105,4 +109,25 @@ header .container-small > * {
 
 .header-buttons ul {
   justify-content: flex-end;
+}
+
+/*
+==============
+Main
+==============
+*/
+
+main .products {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+main .product {
+  width: calc(100% / 3 - 10px);
+  margin-bottom: 50px;
+}
+
+main .product-photo {
+  background-color: #ebebeb;
 }
