@@ -39,6 +39,22 @@ Debug
 
 /*
 ==============
+Container
+==============
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-small {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*
+==============
 Common
 ==============
 */
@@ -73,21 +89,6 @@ main .product-price::after {
   font-weight: 400;
   text-decoration: line-through;
   margin-left: 3px;
-}
-
-/*
-==============
-Container
-==============
-*/
-
-body {
-  background-color: #ffffff;
-}
-
-.container-small {
-  max-width: 1000px;
-  margin: auto;
 }
 
 /*
@@ -136,7 +137,7 @@ Main
 main .products {
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 main .product {
@@ -197,12 +198,13 @@ Labels
 
 main .product-photo .product-labels > * {
   position: absolute;
+  font-size: 14px;
 }
 
 main .product-photo .product-heart {
   background-color: white;
   padding: 5px 15px;
-  font-size: 30px;
+  font-size: 35px;
   top: 10px;
   right: 0;
 }
@@ -234,6 +236,10 @@ main .product-photo #special-category {
   left: 0;
 }
 
+main .product-info .product-price {
+  font-size: 14px;
+}
+
 /*
 ==============
 Footer
@@ -255,6 +261,25 @@ footer .container-small ul {
   margin-top: 5px;
 }
 
-footer .container-small .footer-legal {
+footer .container-small .footer-legal
+footer .footer-legal .social-list {
   width: 50%;
+}
+
+footer .footer-legal .site-name,
+footer .footer-social .social-list {
+  font-weight: bold;
+}
+
+footer .footer-legal ul,
+footer .footer-social .social-list {
+  font-size: 14px;
+}
+
+footer .footer-legal .site-name {
+  font-size: 18px;
+}
+
+footer .footer-social ul {
+  font-size: 20px;
 }
