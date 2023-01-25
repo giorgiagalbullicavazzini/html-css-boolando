@@ -207,6 +207,11 @@ main .product-photo .product-heart {
   right: 0;
 }
 
+main .product-photo .product-heart span:hover {
+  color: red;
+  cursor: pointer;
+}
+
 main .product-photo .product-discount,
 main .product-photo .product-category {
   padding: 5px 10px;
