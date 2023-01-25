@@ -166,3 +166,18 @@ main .product-price#discount-1::after {
 main .product-price#discount-2::after {
   content: "184,99 €";
 }
+
+/*
+==============
+Photo hover
+==============
+*/
+
+main .product-photo .product-photo-hover,
+main .product-photo:hover .product-photo-display {
+  display: none;
+}
+
+main .product-photo:hover .product-photo-hover {
+  display: block;
+}
