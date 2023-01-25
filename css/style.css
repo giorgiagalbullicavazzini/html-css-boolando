@@ -139,6 +139,7 @@ main .product {
 }
 
 main .product-photo {
+  position: relative;
   background-color: #ebebeb;
 }
 
@@ -180,4 +181,44 @@ main .product-photo:hover .product-photo-display {
 
 main .product-photo:hover .product-photo-hover {
   display: block;
+}
+
+/*
+==============
+Labels
+==============
+*/
+
+main .product-photo .product-labels > * {
+  position: absolute;
+}
+
+main .product-photo .product-heart {
+  background-color: white;
+  padding: 5px 15px;
+  font-size: 30px;
+  top: 10px;
+  right: 0;
+}
+
+main .product-photo .product-discount,
+main .product-photo .product-category {
+  padding: 5px 10px;
+  bottom: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+main .product-photo .product-discount {
+  background-color: red;
+  left: 0;
+}
+
+main .product-photo .product-category {
+  background-color: green;
+  left: 60px;
+}
+
+main .product-photo #special-category {
+  left: 0;
 }
