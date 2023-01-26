@@ -171,11 +171,11 @@ main .product-info .product-price {
   color: red;
 }
 
-main .product-price#discount-1::after {
+main .discount-1::after {
   content: "29,99 €";
 }
 
-main .product-price#discount-2::after {
+main .discount-2::after {
   content: "184,99 €";
 }
 
